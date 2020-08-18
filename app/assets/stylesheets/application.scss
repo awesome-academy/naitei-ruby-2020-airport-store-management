@@ -1,4 +1,92 @@
 @import 'bootstrap/scss/bootstrap';
-
 @import './libs/adminlte.scss';
 @import './libs/all.css';
+@import 'abstract/_variables.scss';
+
+#error_explanation {
+  color: $red;
+  ul {
+    color: $red;
+  }
+}
+
+.checkbox {
+  span {
+    margin-left: 2px;
+  }
+}
+
+.overview {
+  font-size: 45px;
+  color: $gray-medium-light-1;
+}
+
+#home-content {
+  background-image: url('../../images/bg.jpg');
+  height: 710px;
+}
+
+#home-content-row {
+  background-color:rgba(86, 127, 170, 0.76);
+  height: 710px;
+  color: $white;
+  padding-top: 100px;
+  padding-left: 180px;
+}
+
+#view-more {
+  color: $white;
+}
+
+#view-more:hover {
+  color: $gray-medium-light-2;
+}
+
+#attendant {
+  margin-left: -50px;
+  width: 613px;
+  height: 613px;
+}
+
+#custom_nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  transition: none;
+  nav {
+    padding: 5px 100px;
+  }
+  .brand-image {
+    position: relative;
+    top: -1px;
+    margin-right: 4px;
+  }
+}
+
+.login-page, .register-page {
+  background-image: url("../../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-box, .register-box {
+  margin-top: 70px;
+}
+
+.login-box {
+  width: 600px;
+}
+
+.register-box {
+  width: 700px;
+}
+
+.required:after {
+  content: "*";
+  color: $red;
+}
+
+.register-logo {
+  margin-bottom: 10px;
+}
