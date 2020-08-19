@@ -70,6 +70,7 @@ vi:
       had_membership: "Đã có tài khoản?"
     create:
       sign_up_success: "Đăng ký thành công!"
+      user_not_found: "Không tìm thấy người dùng!"
   sessions:
     new:
       title: "Đăng nhập"

@@ -70,8 +70,7 @@ en:
       had_membership: "I already have a membership"
     create:
       sign_up_success: "Sign up success!"
-      user_invalid: "User invalid!"
-      sign_up_failed: "Sign up failed"
+      user_not_found: "User invalid!"
   sessions:
     new:
       title: "Sign in"

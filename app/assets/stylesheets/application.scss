@@ -1,12 +1,12 @@
 @import 'bootstrap/scss/bootstrap';
-@import './libs/adminlte.scss';
-@import './libs/all.css';
+@import 'libs/adminlte.scss';
+@import 'libs/all.css';
 @import 'abstract/_variables.scss';
 
 #error_explanation {
-  color: $red;
+  color: red;
   ul {
-    color: $red;
+    color: red;
   }
 }
 
@@ -27,15 +27,15 @@
 }
 
 #home-content-row {
-  background-color:rgba(86, 127, 170, 0.76);
+  background-color: $home-background;
   height: 710px;
-  color: $white;
+  color: white;
   padding-top: 100px;
   padding-left: 180px;
 }
 
 #view-more {
-  color: $white;
+  color: white;
 }
 
 #view-more:hover {
@@ -64,7 +64,7 @@
   }
 }
 
-.login-page, .register-page {
+#home-content, .login-page, .register-page {
   background-image: url("../../images/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -82,11 +82,23 @@
   width: 700px;
 }
 
-.required:after {
-  content: "*";
-  color: $red;
-}
-
 .register-logo {
   margin-bottom: 10px;
+}
+
+.required:after {
+  content: "*";
+  color: red;
+}
+
+.form_error {
+  margin-top: .25rem;
+  font-size: 80%;
+  color: $form-error-red;
+}
+
+.brand-image {
+  opacity: .8;
+  width: 20px;
+  height: auto;
 }

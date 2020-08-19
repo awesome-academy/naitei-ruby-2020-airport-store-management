@@ -11,73 +11,149 @@
         </div>
         <p class="register-box-msg"><%= t ".register" %></p>
         <%= form_for @user do |f| %>
-          <%= render "shared/error_messages", object: f.object %>
           <div class="row">
             <div class="col-6">
-              <%= f.label :name, t(".full_name"), class: "required" %>
-              <div class="input-group mb-2">
-                <%= f.text_field :name, class: "form-control", placeholder: t(".full_name") %>
-                <div class="input-group-append">
-                  <div class="input-group-text">
-                    <span class="fas fa-user"></span>
+              <div class="mb-2">
+                <%= f.label :name, t(".full_name"), class: "required" %>
+                <div class="input-group">
+                  <%= f.text_field :name, required: true,
+                      class: "form-control #{"is-invalid" if @user.errors.messages[:name].any?}",
+                      placeholder: t(".full_name") %>
+                  <div class="input-group-append">
+                    <div class="input-group-text">
+                      <span class="fas fa-user"></span>
+                    </div>
                   </div>
                 </div>
+                <% if @user.errors.messages[:name].any? %>
+                  <% @user.errors.messages[:name].each do |error| %>
+                    <div class="form_error">
+                      <%= t ".full_name" %> <%= error %>
+                    </div>
+                  <% end %>
+                <% end %>
               </div>
-              <%= f.label :name, t(".password"), class: "required" %>
-              <div class="input-group mb-2">
-                <%= f.password_field :password, class: "form-control", placeholder: t(".password") %>
-                <div class="input-group-append">
-                  <div class="input-group-text">
-                    <span class="fas fa-lock"></span>
+              <div class="mb-2">
+                <%= f.label :name, t(".password"), class: "required" %>
+                <div class="input-group">
+                  <%= f.password_field :password, required: true,
+                        class: "form-control #{"is-invalid" if @user.errors.messages[:password].any?}",
+                        placeholder: t(".password") %>
+                  <div class="input-group-append">
+                    <div class="input-group-text">
+                      <span class="fas fa-lock"></span>
+                    </div>
                   </div>
                 </div>
+                <% if @user.errors.messages[:password].any? %>
+                  <% @user.errors.messages[:password].each do |error| %>
+                    <div class="form_error">
+                      <%= t ".password" %> <%= error %>
+                    </div>
+                  <% end %>
+                <% end %>
               </div>
-              <%= f.label :name, t(".company_name"), class: "required" %>
-              <div class="input-group mb-2">
-                <%= f.text_field :company_name, class: "form-control", placeholder: t(".company_name") %>
-                <div class="input-group-append">
-                  <div class="input-group-text">
-                    <span class="fas fa-building"></span>
+              <div class="mb-2">
+                <%= f.label :company_name, t(".company_name"), class: "required" %>
+                <div class="input-group">
+                  <%= f.text_field :company_name, required: true,
+                      class: "form-control #{"is-invalid" if @user.errors.messages[:company_name].any?}",
+                      placeholder: t(".company_name") %>
+                  <div class="input-group-append">
+                    <div class="input-group-text">
+                      <span class="fas fa-building"></span>
+                    </div>
                   </div>
                 </div>
+                <% if @user.errors.messages[:company_name].any? %>
+                  <% @user.errors.messages[:company_name].each do |error| %>
+                    <div class="form_error">
+                      <%= t ".company_name" %> <%= error %>
+                    </div>
+                  <% end %>
+                <% end %>
               </div>
-              <%= f.label :name, t(".phone_number"), class: "required" %>
-              <div class="input-group mb-2">
-                <%= f.text_field :phone_number, class: "form-control", placeholder: t(".phone_number") %>
-                <div class="input-group-append">
-                  <div class="input-group-text">
-                    <span class="fas fa-phone"></span>
+              <div class="mb-2">
+                <%= f.label :name, t(".phone_number"), class: "required" %>
+                <div class="input-group">
+                  <%= f.text_field :phone_number, required: true,
+                        class: "form-control #{"is-invalid" if @user.errors.messages[:phone_number].any?}",
+                        placeholder: t(".phone_number") %>
+                  <div class="input-group-append">
+                    <div class="input-group-text">
+                      <span class="fas fa-phone"></span>
+                    </div>
                   </div>
                 </div>
+                <% if @user.errors.messages[:phone_number].any? %>
+                  <% @user.errors.messages[:phone_number].each do |error| %>
+                    <div class="form_error">
+                      <%= t ".phone_number" %> <%= error %>
+                    </div>
+                  <% end %>
+                <% end %>
               </div>
             </div>
             <div class="col-6">
-              <%= f.label :name, t(".email"), class: "required" %>
-              <div class="input-group mb-2">
-                <%= f.email_field :email, class: "form-control", placeholder: t(".email") %>
-                <div class="input-group-append">
-                  <div class="input-group-text">
-                    <span class="fas fa-envelope"></span>
+              <div class="mb-2">
+                <%= f.label :name, t(".email"), class: "required" %>
+                <div class="input-group">
+                  <%= f.email_field :email, required: true,
+                      class: "form-control #{"is-invalid" if @user.errors.messages[:email].any?}",
+                      placeholder: t(".email") %>
+                  <div class="input-group-append">
+                    <div class="input-group-text">
+                      <span class="fas fa-envelope"></span>
+                    </div>
                   </div>
                 </div>
+                <% if @user.errors.messages[:email].any? %>
+                  <% @user.errors.messages[:email].each do |error| %>
+                    <div class="form_error">
+                      <%= t ".email" %> <%= error %>
+                    </div>
+                  <% end %>
+                <% end %>
               </div>
-              <%= f.label :name, t(".retype_password"), class: "required" %>
-              <div class="input-group mb-2">
-                <%= f.password_field :password_confirmation, class: "form-control", placeholder: t(".retype_password") %>
-                <div class="input-group-append">
-                  <div class="input-group-text">
-                    <span class="fas fa-lock"></span>
+              <div class="mb-2">
+                <%= f.label :name, t(".retype_password"), class: "required" %>
+                <div class="input-group">
+                  <%= f.password_field :password_confirmation, required: true,
+                      class: "form-control #{"is-invalid" if @user.errors.messages[:password_confirmation].any?}",
+                      placeholder: t(".retype_password") %>
+                  <div class="input-group-append">
+                    <div class="input-group-text">
+                      <span class="fas fa-lock"></span>
+                    </div>
                   </div>
                 </div>
+                <% if @user.errors.messages[:password_confirmation].any? %>
+                  <% @user.errors.messages[:password_confirmation].each do |error| %>
+                    <div class="form_error">
+                      <%= t ".retype_password" %> <%= error %>
+                    </div>
+                  <% end %>
+                <% end %>
               </div>
-              <%= f.label :name, t(".identity_number"), class: "required" %>
-              <div class="input-group mb-2">
-                <%= f.text_field :identity_number, class: "form-control", placeholder: t(".identity_number") %>
-                <div class="input-group-append">
-                  <div class="input-group-text">
-                    <span class="fas fa-address-card"></span>
+              <div class="mb-2">
+                <%= f.label :name, t(".identity_number"), class: "required" %>
+                <div class="input-group">
+                  <%= f.text_field :identity_number, required: true,
+                      class: "form-control #{"is-invalid" if @user.errors.messages[:identity_number].any?}",
+                      placeholder: t(".identity_number") %>
+                  <div class="input-group-append">
+                    <div class="input-group-text">
+                      <span class="fas fa-address-card"></span>
+                    </div>
                   </div>
                 </div>
+                <% if @user.errors.messages[:identity_number].any? %>
+                  <% @user.errors.messages[:identity_number].each do |error| %>
+                    <div class="form_error">
+                      <%= t ".identity_number" %> <%= error %>
+                    </div>
+                  <% end %>
+                <% end %>
               </div>
             </div>
           </div>

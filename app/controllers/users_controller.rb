@@ -3,7 +3,7 @@ class UsersController < ApplicationController
     @user = User.find_by id: params[:id]
     return if @user
 
-    flash[:error] = t ".user_invalid"
+    flash[:error] = t ".user_not_found"
   end
 
   def new
@@ -18,7 +18,6 @@ class UsersController < ApplicationController
       redirect_to @user
     else
       @disable_layout = true
-      flash[:error] = t ".sign_up_failed"
       render :new
     end
   end
