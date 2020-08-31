@@ -84,6 +84,8 @@ vi:
   static_pages:
     home:
       title: "Home"
+      empty: Trống
+      rented: Đã thuê
       address: Phú Minh Ward Sóc Sơn  District Hà Nội City
       content_title: Việt Nam
       all_terminal: Tất cả sảnh bay
@@ -135,40 +137,6 @@ vi:
       invalid_login: "Email hoặc mật khẩu không hợp lệ."
     destroy:
       logout_success: "Đăng xuất thành công!"
-  terminals: 
-    show:
-      title: Sảnh bay
-      terminal_dropdown: Sảnh bay
-      airport_terminal: Sảnh bay sân bay Nội Bài
-      terminal_information: Thông tin terminal
-      name: Tên
-      area: Diện tích
-      description_title: Bạn quan tâm đến sảnh bay này?
-      address: Phú Minh Ward Sóc Sơn  District Hà Nội City
-  slots:
-    show:
-      title: Khu vực
-      review: nhận xét
-      address: Phú Minh Ward Sóc Sơn  District Hà Nội City
-      area: Diện tích
-      price: Giá thuê
-      status: Trạng thái
-      amenities: Tiện ích
-      mission: Luôn hướng tới lợi ích doanh nghiệp và trải nghiệm khách hàng
-      clean: Dịch vụ vệ sinh cao cấp
-      business: Môi trường kinh doanh công bằng
-      affordable: Giá cả hợp lý
-      location: Vị trí kinh doanh thuận lợi
-      googlemap_link: Xem chi tiết vị trí tại đây
-      interested_in: Bạn có hứng thú với khu vực này?
-      mission_content: |
-                        Chúng tôi rất chú trọng đến lợi ích của các doanh nghiệp hợp tác,
-                        hướng tới môi trường kinh doanh lành mạnh, phát triển bền vững.
-      hire_now: Đăng ký thuê ngay!
-      rule: "Hãy chắc chắn bạn đồng ý với điều khoản của chúng tôi "
-      rule_link: Tham khảo điều khoản
-      experience_title: Bạn nên trải nghiệm trực tiếp
-      experience: "Lên lịch ghé thăm hoặc liên lạc với chúng tôi: "
   stores:
     show:
       search: Tìm kiếm
@@ -182,7 +150,7 @@ vi:
       area: Diện tích
       price: Giá thuê
       status: Trạng thái
-      hiring: Đang thuê
+      rent: Đang thuê
       waiting: Đang chờ
       cancel_check: Nếu bạn muốn hủy yêu cầu, vui lòng cân nhắc kỹ và bấm vào đây
       cancel: Huỷ yêu cầu
@@ -307,7 +275,6 @@ vi:
       home: Trang chủ
       slots: Slots
       id: "Mã slot: "
-      location: Vị trí
       slot_area: Diện tích
       category: Loại hình kinh doanh
       price: Giá
@@ -322,6 +289,27 @@ vi:
       not_empty: Đã thuê
       no_store: Không có cửa hàng
       no_info: Không có thông tin
+      rented: Đã thuê
+      address: Phú Minh Ward Sóc Sơn  District Hà Nội City
+      area: Diện tích
+      price: Giá thuê
+      status: Trạng thái
+      amenities: Tiện ích
+      mission: Luôn hướng tới lợi ích doanh nghiệp và trải nghiệm khách hàng
+      clean: Dịch vụ vệ sinh cao cấp
+      business: Môi trường kinh doanh công bằng
+      affordable: Giá cả hợp lý
+      location: Vị trí kinh doanh thuận lợi
+      googlemap_link: Xem chi tiết vị trí tại đây
+      interested_in: Bạn có hứng thú với khu vực này?
+      mission_content: |
+                        Chúng tôi rất chú trọng đến lợi ích của các doanh nghiệp hợp tác,
+                        hướng tới môi trường kinh doanh lành mạnh, phát triển bền vững.
+      rent_now: Đăng ký thuê ngay!
+      rule: "Hãy chắc chắn bạn đồng ý với điều khoản của chúng tôi "
+      rule_link: Tham khảo điều khoản
+      experience_title: Bạn nên trải nghiệm trực tiếp
+      experience: "Lên lịch ghé thăm hoặc liên lạc với chúng tôi: "
   views:
     pagination:
       first: "« Đầu"
@@ -347,4 +335,11 @@ vi:
       status: Trạng thái
       area: Diện tích
       empty: Còn trống
+      rented: Đã thuê
       used: Đã được sử dụng
+      terminal_dropdown: Sảnh bay
+      airport_terminal: Sảnh bay sân bay Nội Bài
+      terminal_information: Thông tin terminal
+      name: Tên
+      description_title: Bạn quan tâm đến sảnh bay này?
+      address: Phú Minh Ward Sóc Sơn  District Hà Nội City

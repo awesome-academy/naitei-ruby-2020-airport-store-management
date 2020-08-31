@@ -11,7 +11,6 @@
       <div class="header">
         <div class="header__right">
           <h1 id="slot_name_title"><%= @store.name %></h1>
-          <i class="fas fa-star"><%= Settings.info.star %></i>
         </div>
         <div class="header__left">
           <p> <%= t ".address" %> </p>
@@ -19,7 +18,7 @@
       </div>
       <div class="main">
         <div class="main__left">
-          <img src="https://www.mlive.com/resizer/YEU5ywOU3--21qj7nAlYwDOT_64=/1280x0/smart/arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/4G27NNGGWJDYHIBIL2YJQ6DVPA.jpg" alt="image">
+          <%= image_tag Settings.links.store_image %>
           <div class="pricing">
             <h2><%= t ".description" %></h2>
             <p><%= @store.description %></p>
@@ -50,7 +49,7 @@
             <p class="store-info-p"> <%= t ".area" %>: <%= @store.slot.area %><span>m<sup>2</sup></span> </p>
             <p class="store-info-p"> <%= t ".price" %>: <%= @store.slot.price %></p>
             <% if @store.is_active %>
-              <p class="store-info-p"> <%= t ".status" %>: <%= t ".hiring" %></p>
+              <p class="store-info-p"> <%= t ".status" %>: <%= t ".rent" %></p>
             <% else %>
               <p class="store-info-p"> <%= t ".status" %>: <%= t ".waiting" %></p>
               <p class="store-info-p"><%= t ".cancel_check" %></p>

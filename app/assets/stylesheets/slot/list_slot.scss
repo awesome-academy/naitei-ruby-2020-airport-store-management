@@ -16,7 +16,6 @@
 
 #navbar-header {
   position: fixed !important;
-  margin-left: 278px !important;
 }
 
 .container {
@@ -130,12 +129,9 @@ section.content .header .header__right span {
   display: inline-block;
   text-align: center;
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Apercu", Avenir, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, "Calibri", "Roboto", Arial, sans-serif;
   padding: -0.25rem 1rem 0.75rem 1rem;
-  color: $header-border;
-  border-radius: 50px;
-  border: 1px solid $header-border;
 }
 
 section.content .header .header__left p {
@@ -302,8 +298,7 @@ section.content .main .main__right {
 }
 
 .navbar-right {
-  padding-right: 0;
-  width: auto;
+  margin-left: 12rem;
 }
 
 .dropdown-menu .dropdown-menu-right .p-0{
@@ -322,6 +317,11 @@ section.content .main .main__right {
 
 .home_main_right {
   margin-top: 20px !important;
+  iframe {
+    width: 100%;
+    height: 800px;
+    border: 0;
+  }
 }
 
 .user_navbar_header_left{

@@ -84,6 +84,8 @@ en:
   static_pages:
     home:
       title: "Home"
+      empty: Empty
+      rented: Rented
       address: Phu Minh Ward Soc Son  District Ha Noi city
       content_title: Viet Nam
       all_terminal: All terminal
@@ -137,40 +139,6 @@ en:
       invalid_login: "Invalid email/password combination."
     destroy:
       logout_success: "Logout success!"
-  terminals: 
-    show:
-      title: Terminal
-      terminal_dropdown: Terminal
-      airport_terminal: Noi Bai airport terminal
-      terminal_information: Terminal information
-      name: Name
-      area: Area
-      description_title: Interested in this terminal?
-      address: Phu Minh Ward Soc Son  District Ha Noi city
-  slots:
-    show:
-      title: Slot
-      review: reviews
-      address: Phu Minh Ward Soc Son  District Ha Noi city
-      area: Area
-      price: Price
-      status: Status
-      amenities: Amenities
-      mission: Always towards business benefits and user experience
-      clean: Enhanced cleaning services
-      business: Fair business market
-      affordable: Affordable
-      location: Favorable business location
-      googlemap_link: See location details here
-      interested_in: Interested in this building?
-      mission_content: |
-                        We attach great importance to the benefits of cooperative businesses,
-                        towards a healthy and developing business environment.
-      hire_now: Hire now
-      rule: "Be sure to agree to our terms "
-      rule_link: Read more rules
-      experience_title: You should experience AirPort firsthand!
-      experience: "Schedule a visit above. Or call us: "
   stores:
     show:
       title: Store
@@ -185,7 +153,7 @@ en:
       area: Area
       price: Price
       status: Status
-      hiring: Hiring
+      rent: Rent
       waiting: Waiting
       cancel_check: If you want to cancel the request, please consider carefully and click here
       cancel: Cancel request
@@ -310,10 +278,8 @@ en:
       home: Home
       slots: Slots
       id: "Slot ID: "
-      location: Location
       slot_area: Slot area
       category: Category
-      price: Price
       per_month: $/month
       store_information: " Store: "
       customer_information: " Customer information"
@@ -325,6 +291,27 @@ en:
       not_empty: Rented
       no_store: No store
       no_info: No Information
+      rented: Rented
+      address: Phu Minh Ward Soc Son  District Ha Noi city
+      area: Area
+      price: Price
+      status: Status
+      amenities: Amenities
+      mission: Always towards business benefits and user experience
+      clean: Enhanced cleaning services
+      business: Fair business market
+      affordable: Affordable
+      location: Favorable business location
+      googlemap_link: See location details here
+      interested_in: Interested in this building?
+      mission_content: |
+                        We attach great importance to the benefits of cooperative businesses,
+                        towards a healthy and developing business environment.
+      rent_now: Rent now
+      rule: "Be sure to agree to our terms "
+      rule_link: Read more rules
+      experience_title: You should experience AirPort firsthand!
+      experience: "Schedule a visit above. Or call us: "
   views:
     pagination:
       first: "« FIRST"
@@ -350,4 +337,11 @@ en:
       status: Status
       area: Area
       empty: Empty
+      rented: Rented
       used: Used
+      terminal_dropdown: Terminal
+      airport_terminal: Noi Bai airport terminal
+      terminal_information: Terminal information
+      name: Name
+      description_title: Interested in this terminal?
+      address: Phu Minh Ward Soc Son  District Ha Noi city

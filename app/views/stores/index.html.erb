@@ -11,7 +11,6 @@
       <div class="header">
         <div class="header__right">
           <h1 id="slot_name_title"><%= t ".title" %></h1>
-          <i class="fas fa-star"><%= Settings.info.star %></i>
         </div>
         <div class="header__left">
           <p> <%= t ".address" %> </p>
@@ -23,10 +22,10 @@
             <% @stores.each do |store| %>
               <%= link_to user_store_path(current_user) do %>
                 <div class="product slot-info-product" id="store_product">
-                  <%= image_tag "https://www.mlive.com/resizer/YEU5ywOU3--21qj7nAlYwDOT_64=/1280x0/smart/arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/4G27NNGGWJDYHIBIL2YJQ6DVPA.jpg", class: "slot-info-product-img" %>
+                  <%= image_tag Settings.links.store_image, class: "slot-info-product-img" %>
                   <div class="product__detail">
                     <h3><%= store.name %></h3>
-                    <p><%= store.description %></p>
+                    <p><%= store.slot_name %></p>
                   </div>
                 </div>
               <% end %>
@@ -71,7 +70,7 @@
                   <% current_user.stores.each_with_index do |store, index| %>
                     <% if index == 0 %>
                       <div class="carousel-item active">
-                        <%= image_tag "https://media.timeout.com/images/105634590/630/472/image.jpg", class: "d-block w-100" %>
+                        <%= image_tag Settings.links.store_image, class: "d-block w-100" %>
                         <div class="carousel-caption d-none d-md-block">
                           <h5><%= store.name %></h5>
                           <p><%= store.description %></p>
@@ -79,7 +78,7 @@
                       </div>
                     <% else %>
                       <div class="carousel-item">
-                        <%= image_tag "https://media.timeout.com/images/105634590/630/472/image.jpg", class: "d-block w-100" %>
+                        <%= image_tag Settings.links.store_image, class: "d-block w-100" %>
                         <div class="carousel-caption d-none d-md-block">
                           <h5><%= store.name %></h5>
                           <p><%= store.description %></p>
