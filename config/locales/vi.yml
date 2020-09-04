@@ -66,23 +66,43 @@ vi:
       references: Tham khảo
     application:
       store_management: Quản lý cửa hàng
-  shared:
-    error_messages:
-      alert: "Form chứa"
-      alert_error: "lỗi"
-    custom_navbar:
-      airport_store: Quản lý cửa hàng
-      home: Trang chủ
-      help: Giúp đỡ
-      about: Giới thiệu
-      contact: Liên hệ
-      search: Tìm kiếm
-      login: Đăng nhập
-      sign_up: "Đăng ký"
-      english: "Tiếng Anh"
-      vietnamese: "Tiếng Việt"
+    shared:
+      error_messages:
+        alert: "Form chứa"
+        alert_error: "lỗi"
+      custom_navbar:
+        airport_store: Quản lý cửa hàng
+        home: Trang chủ
+        help: Giúp đỡ
+        about: Giới thiệu
+        contact: Liên hệ
+        search: Tìm kiếm
+        login: Đăng nhập
+        sign_up: "Đăng ký"
+        english: "Tiếng Anh"
+        vietnamese: "Tiếng Việt"
+      search_slot_form:
+        placeholder: Tên sảnh hoặc slot
+        search: Tìm
+        clear: Xóa
+        price_from: Giá từ
+        area_from: Diện tích từ
+        to: đến
+        rent: Đã thuê
+        empty: Còn trống
+        price0: 0$
+        price1: 100$
+        price2: 200$
+        price3: 300$
+        area0: 0m2
+        area1: 100m2
+        area2: 200m2
+        area3: 300m2
   static_pages:
     home:
+      no_result: Không có kết quả
+      per_month: $/tháng
+      search: Tìm kiếm
       title: "Home"
       rent: Đã thuê
       empty: Còn trống
@@ -163,6 +183,9 @@ vi:
       empty: Còn trống
       used: Đã được sử dụng
       rent: Đã thuê
+      no_result: Không có kết quả
+      search: Tìm kiếm
+      per_month: $/tháng
   stores:
     show:
       search: Tìm kiếm
@@ -255,6 +278,11 @@ vi:
       end_date: Ngày kết thúc
       actions: Thao tác
       detail: Chi tiết
+      search: Tìm kiếm cửa hàng, khách hàng, trạng thái, sảnh...
+      search_button: Tìm kiếm
+      start_date: Ngày bắt đầu
+      end_date: Ngày kết thúc
+      no_result: Không có kết quả
     show:
       home: Trang chủ
       contracts: Hợp đồng

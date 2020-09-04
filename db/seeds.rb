@@ -39,37 +39,37 @@ Category.create(name: "Clothes")
 
 Category.create(name: "Present")
 
-Slot.create(terminal_id: 1, name: "Slot 1", area: 200, price: 200, is_empty: false)
+Slot.create(terminal_id: 1, name: "Slot 1", area: 150, price: 170, is_empty: false)
 
-Slot.create(terminal_id: 1, name: "Slot 2", area: 200, price: 200, is_empty: false)
+Slot.create(terminal_id: 1, name: "Slot 2", area: 100, price: 300, is_empty: false)
 
 Slot.create(terminal_id: 1, name: "Slot 3", area: 200, price: 250, is_empty: false)
 
-Slot.create(terminal_id: 1, name: "Slot 4", area: 200, price: 200)
+Slot.create(terminal_id: 1, name: "Slot 4", area: 50, price: 200)
 
-Slot.create(terminal_id: 2, name: "Slot 5", area: 200, price: 200, is_empty: false)
+Slot.create(terminal_id: 2, name: "Slot 5", area: 300, price: 275, is_empty: false)
 
-Slot.create(terminal_id: 2, name: "Slot 6", area: 200, price: 260, is_empty: false)
+Slot.create(terminal_id: 2, name: "Slot 6", area: 250, price: 300, is_empty: false)
 
-Slot.create(terminal_id: 2, name: "Slot 7", area: 200, price: 200, is_empty: false)
+Slot.create(terminal_id: 2, name: "Slot 7", area: 200, price: 250, is_empty: false)
 
-Slot.create(terminal_id: 2, name: "Slot 8", area: 200, price: 200, is_empty: true)
+Slot.create(terminal_id: 2, name: "Slot 8", area: 100, price: 50, is_empty: true)
 
 Slot.create(terminal_id: 3, name: "Slot 9", area: 200, price: 200, is_empty: false)
 
-Slot.create(terminal_id: 3, name: "Slot 10", area: 200, price: 200, is_empty: true)
+Slot.create(terminal_id: 3, name: "Slot 10", area: 50, price: 100, is_empty: true)
 
 Slot.create(terminal_id: 3, name: "Slot 11", area: 200, price: 200)
 
-Slot.create(terminal_id: 3, name: "Slot 12", area: 200, price: 200)
+Slot.create(terminal_id: 3, name: "Slot 12", area: 300, price: 250)
 
-Slot.create(terminal_id: 4, name: "Slot 13", area: 200, price: 200)
+Slot.create(terminal_id: 4, name: "Slot 13", area: 200, price: 125)
 
-Slot.create(terminal_id: 4, name: "Slot 14", area: 200, price: 200)
+Slot.create(terminal_id: 4, name: "Slot 14", area: 150, price: 75)
 
-Slot.create(terminal_id: 4, name: "Slot 15", area: 200, price: 200)
+Slot.create(terminal_id: 4, name: "Slot 15", area: 300, price: 135)
 
-Slot.create(terminal_id: 4, name: "Slot 16", area: 200, price: 200)
+Slot.create(terminal_id: 4, name: "Slot 16", area: 250, price: 90)
 
 Status.create(name: "Pending")
 
@@ -101,20 +101,20 @@ Store.create(slot_id: 10, user_id: 1, category_id: 3, name: "Suarez", descriptio
 
 Contract.create(store_id: 1, status_id: 1, start_date: "7:00 2020/05/20", end_date: "7:00 2021/05/20")
 
-Contract.create(store_id: 2, status_id: 1, start_date: "8:00 2020/05/20", end_date: "8:00 2022/05/20")
+Contract.create(store_id: 2, status_id: 1, start_date: "8:00 2020/05/25", end_date: "8:00 2022/05/25")
 
 Contract.create(store_id: 3, status_id: 1, start_date: "8:45 2020/06/20", end_date: "8:45 2021/06/20")
 
-Contract.create(store_id: 4, status_id: 1, start_date: "9:00 2020/06/20", end_date: "9:30 2021/06/20")
+Contract.create(store_id: 4, status_id: 1, start_date: "9:00 2020/06/22", end_date: "9:30 2021/06/22")
 
-Contract.create(store_id: 5, status_id: 2, start_date: "9:15 2020/06/20", end_date: "9:30 2021/06/20")
+Contract.create(store_id: 5, status_id: 2, start_date: "9:15 2020/06/25", end_date: "9:30 2021/06/25")
 
-Contract.create(store_id: 6, status_id: 2, start_date: "9:30 2020/06/20", end_date: "9:30 2021/06/20")
+Contract.create(store_id: 6, status_id: 2, start_date: "9:30 2020/07/27", end_date: "9:30 2021/07/27")
 
-Contract.create(store_id: 7, status_id: 3, start_date: "9:45 2020/06/20", end_date: "8:45 2021/06/20")
+Contract.create(store_id: 7, status_id: 3, start_date: "9:45 2020/07/16", end_date: "8:45 2021/07/20")
 
-Contract.create(store_id: 8, status_id: 3, start_date: "8:00 2020/06/20", end_date: "8:45 2021/06/20")
+Contract.create(store_id: 8, status_id: 3, start_date: "8:00 2020/09/16", end_date: "8:45 2021/10/20")
 
-Contract.create(store_id: 9, status_id: 4, start_date: "8:30 2020/06/20", end_date: "8:45 2021/06/20")
+Contract.create(store_id: 9, status_id: 4, start_date: "8:30 2020/10/20", end_date: "8:45 2021/10/20")
 
-Contract.create(store_id: 10, status_id: 4, start_date: "8:00 2020/06/20", end_date: "8:45 2021/06/20")
+Contract.create(store_id: 10, status_id: 4, start_date: "8:00 2020/11/16", end_date: "8:45 2021/12/20")

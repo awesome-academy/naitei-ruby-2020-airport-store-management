@@ -66,25 +66,45 @@ en:
       references: References
     application:
       store_management: Store Management
-  shared:
-    error_messages:
-      alert: "The form contains"
-      alert_error: "error"
-    custom_navbar:
-      airport_store: Airport Store
-      home: Home
-      contact: Contact
-      help: Help
-      about: About
-      search: Search
-      login: Login
-      sign_up: "Sign up"
-      english: "English"
-      vietnamese: "Vietnamese"
+    shared:
+      error_messages:
+        alert: "The form contains"
+        alert_error: "error"
+      custom_navbar:
+        airport_store: Airport Store
+        home: Home
+        contact: Contact
+        help: Help
+        about: About
+        search: Search
+        login: Login
+        sign_up: "Sign up"
+        english: "English"
+        vietnamese: "Vietnamese"
+      search_slot_form:
+        placeholder: Terminal/ Slot name
+        search: Search
+        clear: Clear
+        price_from: Price from
+        area_from: Area from
+        to: to
+        rent: Rented
+        empty: Empty
+        price0: 0$
+        price1: 100$
+        price2: 200$
+        price3: 300$
+        area0: 0m2
+        area1: 100m2
+        area2: 200m2
+        area3: 300m2
   static_pages:
     home:
+      no_result: No result
+      per_month: $/month
+      search: Search
       title: "Home"
-      rent: Rent
+      rent: Rented
       empty: Empty
       address: Phu Minh Ward Soc Son  District Ha Noi city
       content_title: Viet Nam
@@ -164,7 +184,10 @@ en:
       status: Status
       empty: Empty
       used: Used
-      rent: Rent
+      rent: Rented
+      no_result: No result
+      search: Search
+      per_month: $/month
   stores:
     show:
       title: Store
@@ -258,6 +281,11 @@ en:
       end_date: End date
       actions: Actions
       detail: Detail
+      search: Search store, status, user, terminal...
+      search_button: Search
+      start_date: Start date
+      end_date: End date
+      no_result: No result
     show:
       home: Home
       contracts: Contracts

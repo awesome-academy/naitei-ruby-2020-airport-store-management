@@ -1,0 +1,32 @@
+<div>
+  <br>
+  <%= search_form_for q, url: root_path, class: "form" do |f| %>
+    <div class="form-group">
+    <% binding.pry %>
+      <div class="row">
+        <div class="col-md-4">
+          <%= f.text_field :name_or_terminal_name_cont, placeholder: t(".placeholder"), class: "form-control" %><br>
+          <%= f.select :is_empty_eq, [[t(".empty"), "true"], [t(".rent"), "false"]], {}, { :class => "form-control" } %>
+        </div>
+        <div class="col-md-4">
+          <%= f.select :area_gteq, options_for_select([[t(".area0"), "0"], [t(".area1"), "100"], [t(".area2"), "200"]]), {include_blank: t(".area_from")}, { :class => "form-control" } %><br>
+          <%= f.select :price_gteq, options_for_select([[t(".price0"), "0"], [t(".price1"), "100"], [t(".price2"), "200"]]), {include_blank: t(".price_from")}, { :class => "form-control" } %>
+        </div>
+        <div class="col-md-4">
+          <%= f.select :area_lteq, options_for_select([[t(".area1"), "100"], [t(".area2"), "200"], [t(".area3"), "300"]]), {include_blank: t(".to")}, { :class => "form-control" } %><br>
+          <%= f.select :price_lteq, options_for_select([[t(".price1"), "100"], [t(".price2"), "200"], [t(".price3"), "300"]]), {include_blank: t(".to")}, { :class => "form-control" } %><br>
+          <div class="row">
+            <div class="input-group-append col-md-6">
+              <%= f.button :submit, class: "btn btn-primary" do %>
+                <% t ".search" %>
+              <% end %>
+            </div>
+            <div class="input-group-append col-md-6">
+              <%= link_to t(".clear"), root_path, :class => "btn btn-secondary" %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
